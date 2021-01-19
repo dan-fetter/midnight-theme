@@ -1,7 +1,7 @@
 :root {
   --primary-bg-color: #282a36;
   --secondary-bg-color: #44475a;
-  --editor-bg-color: #red;
+  --editor-bg-color: red;
   --border-color: #13131a;
   --ui-text-color: #f8f8f2;
   --sn-stylekit-info-color: #bd93f9;
