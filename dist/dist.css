@@ -47,7 +47,7 @@
   color: var(--sn-stylekit-contrast-foreground-color);
 }
 
-#note-text-editor::selection {
+#editor-column::selection {
   color: var(--ui-text-color);
 }
 
