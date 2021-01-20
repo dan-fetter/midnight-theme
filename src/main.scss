@@ -9,9 +9,9 @@
   --sn-component-outer-border-color: var(--neutral);
   --sn-component-inner-border-color: var(--ui-text-color);
   --sn-stylekit-info-color: #bd93f9;
-  --sn-stylekit-info-contrast-color: var(--neutral);
+  --sn-stylekit-info-contrast-color: var(--ui-text-color);
   --sn-stylekit-neutral-color: #6272a4;
-  --sn-stylekit-neutral-contrast-color: var(--neutral);
+  --sn-stylekit-neutral-contrast-color: var(--ui-text-color);
   --sn-stylekit-success-color: #50fa7b;
   --sn-stylekit-success-contrast-color: var(--neutral);
   --sn-stylekit-warning-color: #ffb86c;
@@ -45,6 +45,10 @@
 #notes-column .note.selected, .notes .note.selected {
   background-color: var(--secondary-bg-color);
   color: var(--sn-stylekit-contrast-foreground-color);
+}
+
+#note-text-editor::selection {
+  color: var(--ui-text-color);
 }
 
 .sn-component .sk-panel .sk-panel-footer .left {
