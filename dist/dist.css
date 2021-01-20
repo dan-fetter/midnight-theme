@@ -38,4 +38,8 @@
   --sn-stylekit-scrollbar-thumb-color: var(--secondary-bg-color);
 }
 
+#notes-column .note.selected, .notes .note.selected {
+  background-color: var(--secondary-bg-color);
+  color: var(--sn-stylekit-contrast-foreground-color);
+}
 /*# sourceMappingURL=dist.css.map */
