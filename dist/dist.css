@@ -47,6 +47,10 @@
   color: var(--sn-stylekit-contrast-foreground-color);
 }
 
+#editor-column .input::selection, #editor-column .textarea::selection {
+  color: var(--ui-text-color);
+}
+
 /*#notes-column .note.selected .note-flags {
   color: red;
 }
