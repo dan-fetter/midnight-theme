@@ -1,43 +1,51 @@
 :root {
-  --neutral: #1d1e26;
+  --app-bg-color: #1d1e26;
   --primary-bg-color: #282a36;
   --secondary-bg-color: #44475a;
-  --ui-text-color: #f8f8f2;
-  --sn-component-foreground-color: var(--ui-text-color);
-  --sn-component-background-color: var(--neutral);
-  --sn-component-foreground-highlight-color: var(--sn-stylekit-info-color);
-  --sn-component-outer-border-color: var(--neutral);
-  --sn-component-inner-border-color: var(--ui-text-color);
+  --fg-color: #f8f8f2;
+
   --sn-stylekit-info-color: #bd93f9;
-  --sn-stylekit-info-contrast-color: var(--neutral);
+  --sn-stylekit-info-contrast-color: var(--app-bg-color);
   --sn-stylekit-neutral-color: #6272a4;
-  --sn-stylekit-neutral-contrast-color: var(--ui-text-color);
+  --sn-stylekit-neutral-contrast-color: var(--app-bg-color);
   --sn-stylekit-success-color: #50fa7b;
-  --sn-stylekit-success-contrast-color: var(--neutral);
+  --sn-stylekit-success-contrast-color: var(--app-bg-color);
   --sn-stylekit-warning-color: #ffb86c;
-  --sn-stylekit-warning-contrast-color: var(--neutral);
+  --sn-stylekit-warning-contrast-color: var(--app-bg-color);
   --sn-stylekit-danger-color: #ff5555;
-  --sn-stylekit-danger-contrast-color: var(--neutral);
-  --sn-desktop-titlebar-bg-color: var(--neutral);
-  --sn-desktop-titlebar-border-color: var(--neutral);
-  --sn-desktop-titlebar-ui-color: var(--ui-text-color);
+  --sn-stylekit-danger-contrast-color: var(--app-bg-color);
+
+  --sn-component-foreground-color: var(--fg-color);
+  --sn-component-background-color: var(--app-bg-color);
+  --sn-component-foreground-highlight-color: var(--sn-stylekit-info-color);
+  --sn-component-outer-border-color: var(--app-bg-color);
+  --sn-component-inner-border-color: var(--fg-color);
+
+  --sn-desktop-titlebar-bg-color: var(--app-bg-color);
+  --sn-desktop-titlebar-border-color: var(--app-bg-color);
+  --sn-desktop-titlebar-ui-color: var(--fg-color);
   --sn-desktop-titlebar-ui-hover-color: var(--sn-stylekit-info-color);
-  --sn-stylekit-shadow-color: var(--neutral);
+
   --sn-stylekit-background-color: var(--primary-bg-color);
-  --sn-stylekit-border-color: var(--neutral);
-  --sn-stylekit-foreground-color: var(--ui-text-color);
-  --sn-stylekit-contrast-background-color: var(--neutral);
-  --sn-stylekit-contrast-foreground-color: var(--ui-text-color);
-  --sn-stylekit-contrast-border-color: var(--neutral);
-  --sn-stylekit-secondary-background-color: var(--neutral);
-  --sn-stylekit-secondary-foreground-color: var(--ui-text-color);
-  --sn-stylekit-secondary-border-color: var(--neutral);
+  --sn-stylekit-foreground-color: var(--fg-color);
+  --sn-stylekit-border-color: var(--app-bg-color);
+  --sn-stylekit-shadow-color: var(--app-bg-color);
+
+  --sn-stylekit-contrast-background-color: var(--app-bg-color);
+  --sn-stylekit-contrast-foreground-color: var(--fg-color);
+  --sn-stylekit-contrast-border-color: var(--app-bg-color);
+
+  --sn-stylekit-secondary-background-color: var(--app-bg-color);
+  --sn-stylekit-secondary-foreground-color: var(--fg-color);
+  --sn-stylekit-secondary-border-color: var(--app-bg-color);
   --sn-stylekit-secondary-contrast-background-color: var(--secondary-bg-color);
-  --sn-stylekit-secondary-contrast-foreground-color: var(--ui-text-color);
-  --sn-stylekit-secondary-contrast-border-color: var(--neutral);
+  --sn-stylekit-secondary-contrast-foreground-color: var(--fg-color);
+  --sn-stylekit-secondary-contrast-border-color: var(--app-bg-color);
+
   --sn-stylekit-editor-background-color: var(--sn-stylekit-background-color);
   --sn-stylekit-editor-foreground-color: var(--sn-stylekit-foreground-color);
-  --sn-stylekit-paragraph-text-color: var(--ui-text-color);
+  --sn-stylekit-paragraph-text-color: var(--fg-color);
+
   --sn-stylekit-scrollbar-track-border-color: var(--secondary-bg-color);
   --sn-stylekit-scrollbar-thumb-color: var(--secondary-bg-color);
 }
@@ -48,18 +56,5 @@
 }
 
 #editor-column input::selection, #editor-column textarea::selection {
-  color: var(--ui-text-color);
+  color: var(--fg-color);
 }
-
-/*#notes-column .note.selected .note-flags {
-  color: red;
-}
-
-#editor-column::selection {
-  color: var(--ui-text-color);
-} */
-
-.sn-component .sk-panel .sk-panel-footer .left {
-  color: var(--ui-text-color);
-}
-/*# sourceMappingURL=dist.css.map */
