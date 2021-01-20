@@ -48,8 +48,7 @@
 }
 
 #note-text-editor::selection {
-    background-color: #352e7e;
-    color: #fff;
+  color: var(--ui-text-color);
 }
 
 .sn-component .sk-panel .sk-panel-footer .left {
