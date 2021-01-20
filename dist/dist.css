@@ -42,18 +42,18 @@
   --sn-stylekit-scrollbar-thumb-color: var(--secondary-bg-color);
 }
 
-#notes-column .note.selected, .notes .note.selected {
+#notes-column .note.selected {
   background-color: var(--secondary-bg-color);
   color: var(--sn-stylekit-contrast-foreground-color);
 }
 
-#notes-column .note.selected .note-flags {
+/*#notes-column .note.selected .note-flags {
   color: red;
 }
 
 #editor-column::selection {
   color: var(--ui-text-color);
-}
+} */
 
 .sn-component .sk-panel .sk-panel-footer .left {
   color: var(--ui-text-color);
